@@ -8,7 +8,7 @@ $(function() {
 				$('#badges').append(course);
 				$(course).append('<h3 title="' + response.courses.completed[i].title + '">' + response.courses.completed[i].title + '</h3>');
 				$(course).append('<img src="' + response.courses.completed[i].badge + '">');
-				$(course).append('<a href="' + response.courses.completed[i].url + '" target="_blank" class="btn btn-primary">' + response.courses.completed[i].title + '</a>');
+				$(course).append('<a href="' + response.courses.completed[i].url + '" target="_blank" class="btn btn-primary">See Course</a>');
 			}
 		}
 	});
