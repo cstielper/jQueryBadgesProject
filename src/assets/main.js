@@ -3,7 +3,6 @@ $(function() {
 		url: 'https://www.codeschool.com/users/cstielper.json',
 		dataType: 'jsonp',
 		success: function(response) {
-			console.log(response.courses.completed);
 			for(var i = 0; i < response.courses.completed.length; i++) {
 				var course = $('<div class="course">');
 				$('#badges').append(course);
